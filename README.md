@@ -29,9 +29,9 @@ look at the src! To execute it on your local machine, use the `run.sh`!
 => ten million
 10000000_quicksort: 1378ms
 
-FATAL ERROR: JS Allocation failed - process out of memory
+FATAL ERROR: JS Allocation failed - process out of memory (one hundred million digits)
 ```
 
-Yeah what a pity, there we got a restriction. Sorting a ten million digits long array is too much. If anyone has got a solution, please share it!
+Yeah what a pity, there we got a restriction. Sorting a one hundred million digits long array is too much. If anyone has got a solution, please share it!
 
 So, have fun with it!
