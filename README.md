@@ -34,4 +34,29 @@ FATAL ERROR: JS Allocation failed - process out of memory (one hundred million d
 
 Yeah what a pity, there we got a restriction. Sorting a one hundred million digits long array is too much. If anyone has got a solution, please share it!
 
+**UPDATE:** I tried to implement a native quicksort version to circumvent the `JS Allocation failed Error` __BUT__ it still exists. It is simple the length of the array which makes problems! 
+
+Try the following to convince yourself:
+
+```shell
+$ node
+> function a(n) {var ar = [], i=n-1; ar.length=n; for(;i>=0;i--) {ar[i]=i;} return ar;};
+undefined
+> a(12)
+[ 0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11 ]
+> var _a=a(100000000); _a.length
+FATAL ERROR: CALL_AND_RETRY_2 Allocation failed - process out of memory
+```
+
 So, have fun with it!
