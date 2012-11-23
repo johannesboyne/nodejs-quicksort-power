@@ -59,4 +59,14 @@ undefined
 FATAL ERROR: CALL_AND_RETRY_2 Allocation failed - process out of memory
 ```
 
+By the way I also tried the native Array.sort() function AND we are much faster with quicksort! Look at this benchmark:
+
+```shell
+------------ testarray length: 10.000.000
+quick sort: 2160ms
+
+------------ testarray length: 10.000.000
+native sort implementation: 11705ms
+```
+
 So, have fun with it!
