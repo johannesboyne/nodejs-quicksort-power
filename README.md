@@ -70,3 +70,5 @@ native sort implementation: 11705ms
 ```
 
 So, have fun with it!
+
+[![endorse](https://api.coderwall.com/johannesboyne/endorsecount.png)](https://coderwall.com/johannesboyne)
